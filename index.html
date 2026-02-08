@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Sleepover Bucket List</title>
+    <style>
+        :root {
+            --pink-light: #ffebf2;
+            --pink-main: #ff85a2;
+            --pink-dark: #f06292;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--pink-light);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--pink-dark);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: var(--pink-main);
+        }
+
+        .bucket-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .idea-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-5px);
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border: 2px solid var(--pink-main);
+            border-radius: 50%;
+            margin-right: 15px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: var(--pink-main);
+        }
+
+        input[type="checkbox"]:checked::after {
+            content: '✓';
+            color: white;
+            position: absolute;
+            left: 5px;
+            top: -2px;
+            font-weight: bold;
+        }
+
+        input[type="checkbox"]:checked + span {
+            text-decoration: line-through;
+            color: #b5b5b5;
+        }
+
+        span {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: var(--pink-main);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sleepover Bucket List</h1>
+        <p class="subtitle">✨ 15+ Ideas for the Best Night Ever ✨</p>
+    </header>
+
+    <div class="bucket-list">
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>DIY Face Masks & Spa Station</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Midnight Pancake Bar</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Blindfolded Makeup Challenge</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Flashlight Tag</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Matching PJ Photoshoot</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Build a Mega Blanket Fort</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Scary Movie Marathon</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Truth or Dare (Sleepover Ed.)</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Make Custom Friendship Bracelets</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Indoor S'mores Making</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Karaoke Dance-Off</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Decorate Pillowcases</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Board Game Tournament</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Taco or Pizza Bar DIY</span>
+        </label>
+
+        <label class="idea-card">
+            <input type="checkbox">
+            <span>Plan Your Dream Vacation</span>
+        </label>
+    </div>
+
+    <footer>
+        <p>Made for memories that last forever 💖</p>
+    </footer>
+
+</body>
+</html>
